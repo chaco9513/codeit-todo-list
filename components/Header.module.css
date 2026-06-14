@@ -1,0 +1,52 @@
+.header {
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoLarge {
+  display: block;
+}
+
+.logoSmall {
+  display: none;
+}
+
+/* Tablet: 744px */
+@media (max-width: 1199px) {
+  .inner {
+    max-width: 744px;
+    padding: 0 24px;
+  }
+}
+
+/* Mobile: 375px */
+@media (max-width: 743px) {
+  .inner {
+    max-width: 375px;
+    padding: 0 16px;
+  }
+
+  .logoLarge {
+    display: none;
+  }
+
+  .logoSmall {
+    display: block;
+  }
+}

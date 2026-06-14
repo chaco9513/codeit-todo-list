@@ -1,0 +1,98 @@
+.form {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.input {
+  flex: 1;
+  height: 48px;
+  padding: 0 22px;
+
+  border: 2px solid var(--slate-900);
+  border-radius: 24px;
+  background-color: var(--slate-100);
+  box-shadow: 4px 4px 0 var(--slate-900);
+
+  color: var(--slate-900);
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--slate-400);
+}
+
+.addButton {
+  width: 144px;
+  height: 48px;
+
+  border: 2px solid var(--slate-900);
+  border-radius: 24px;
+  background-color: var(--slate-200);
+  box-shadow: 4px 4px 0 var(--slate-900);
+
+  color: var(--slate-900);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.addButton img {
+  display: none;
+}
+
+.addButton::before {
+  content: "+ 추가하기";
+}
+
+.mobileAddButton {
+  display: none;
+}
+
+/* Tablet: 744px */
+@media (max-width: 1199px) {
+  .form {
+    gap: 16px;
+    margin-bottom: 34px;
+  }
+}
+
+/* Mobile: 375px */
+@media (max-width: 743px) {
+  .form {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .addButton {
+    display: none;
+  }
+
+  .mobileAddButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--slate-900);
+    border-radius: 50%;
+    background-color: var(--violet-600);
+    box-shadow: 4px 4px 0 var(--slate-900);
+
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .mobileAddButton img {
+    display: none;
+  }
+
+  .mobileAddButton::before {
+    content: "+";
+  }
+}

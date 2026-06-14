@@ -1,0 +1,92 @@
+.section {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  width: auto;
+  height: 36px;
+}
+
+.listSection .label {
+  margin-bottom: 14px;
+}
+
+.emptySection .label {
+  margin-bottom: 48px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emptyBox {
+  min-height: 280px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyTodoImage {
+  display: block;
+  width: 240px;
+  height: 240px;
+  object-fit: contain;
+}
+
+.emptyDoneImage {
+  display: block;
+  width: 240px;
+  height: 220px;
+  object-fit: contain;
+}
+
+.emptyText {
+  margin: 16px 0 0;
+  white-space: pre-line;
+  text-align: center;
+  color: var(--slate-400);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Tablet: 744px */
+@media (max-width: 1199px) {
+  .listSection .label {
+    margin-bottom: 14px;
+  }
+
+  .emptySection .label {
+    margin-bottom: 32px;
+  }
+}
+
+/* Mobile: 375px */
+@media (max-width: 743px) {
+  .listSection .label {
+    margin-bottom: 14px;
+  }
+
+  .emptySection .label {
+    margin-bottom: 24px;
+  }
+
+  .emptyBox {
+    min-height: 190px;
+  }
+
+  .emptyTodoImage,
+  .emptyDoneImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .emptyText {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+}

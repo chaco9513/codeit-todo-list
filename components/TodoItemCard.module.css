@@ -1,0 +1,59 @@
+.card {
+  width: 100%;
+  min-height: 42px;
+  padding: 4px 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border: 2px solid var(--slate-900);
+  border-radius: 24px;
+  background-color: white;
+}
+
+.card.done {
+  background-color: var(--violet-100);
+}
+
+.checkboxButton {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+
+  padding: 0;
+  border: none;
+  background: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxButton img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.name {
+  flex: 1;
+  color: var(--slate-900);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
+
+@media (max-width: 743px) {
+  .card {
+    min-height: 42px;
+    padding: 4px 10px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}

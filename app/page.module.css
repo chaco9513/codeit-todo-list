@@ -1,0 +1,45 @@
+.main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0px;
+}
+
+.todoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.loading {
+  margin-top: 80px;
+  text-align: center;
+  color: var(--slate-400);
+  font-weight: 700;
+}
+
+/* Tablet: 744px */
+@media (max-width: 1199px) {
+  .main {
+    max-width: 744px;
+    padding: 24px 24px;
+  }
+
+  .todoGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* Mobile: 375px */
+@media (max-width: 743px) {
+  .main {
+    max-width: 375px;
+    padding: 24px 16px;
+  }
+
+  .todoGrid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
